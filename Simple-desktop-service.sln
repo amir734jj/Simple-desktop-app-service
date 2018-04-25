@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simple-desktop-service", "Simple-desktop-service\Simple-desktop-service.csproj", "{28DC3E72-5FD7-46D6-B084-1B73F6ED7933}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup-project", "Setup-project\Setup-project.vdproj", "{27BD30F0-D13F-4A77-821E-4B932705E4F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{28DC3E72-5FD7-46D6-B084-1B73F6ED7933}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28DC3E72-5FD7-46D6-B084-1B73F6ED7933}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28DC3E72-5FD7-46D6-B084-1B73F6ED7933}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27BD30F0-D13F-4A77-821E-4B932705E4F0}.Debug|Any CPU.ActiveCfg = Debug
+		{27BD30F0-D13F-4A77-821E-4B932705E4F0}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

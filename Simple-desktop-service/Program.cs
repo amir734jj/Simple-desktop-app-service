@@ -4,6 +4,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
+using Simple_desktop_service;
 
 namespace Simple_desktop_service
 {
@@ -14,12 +15,17 @@ namespace Simple_desktop_service
         /// </summary>
         static void Main()
         {
-            ServiceBase[] ServicesToRun;
-            ServicesToRun = new ServiceBase[]
+#if DEBUG
+            var debugService = new SimpleService();
+            debugService.OnDebug();
+            System.Threading.Thread.Sleep(System.Threading.Timeout.Infinite);
+#else
+            var servicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new SimpleService()
             };
-            ServiceBase.Run(ServicesToRun);
+            ServiceBase.Run(servicesToRun);
+#endif
         }
     }
 }
